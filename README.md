@@ -1,10 +1,6 @@
 # Emisiones de CO2 - Grupo I
 este es el repositorio en github que contiene los jupyter notebook(s) con todo el proyecto desarrollado y evidencias de la participación colaborativa de cada integrante del grupo  I mediante los commit realizados. 
 
-Fuente de trabajo: Emisiones de CO₂
-¿Cuánto CO₂ emite el mundo? ¿Qué países emiten más?
-https://ourworldindata.org/co2-emissions
-
 Autores: 
 Por Hannah Ritchie y Max Roser
 
@@ -20,3 +16,7 @@ Por Hannah Ritchie y Max Roser
 
 ## Licencia
 Los datos pertenecen a Our World in Data y sus fuentes originales.
+Fuente de trabajo: Emisiones de CO₂
+¿Cuánto CO₂ emite el mundo? ¿Qué países emiten más?
+https://ourworldindata.org/co2-emissions
+
