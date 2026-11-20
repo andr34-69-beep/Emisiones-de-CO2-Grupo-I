@@ -15,12 +15,14 @@ Por Hannah Ritchie y Max Roser
 - Visualizar tendencias de largo plazo.
 
 ## Análisis creado
-- [Notebook adjunto: variación anual de las emisiones de CO₂ en Latinoamérica][def]
+
+-
+  [Notebook adjunto: variación anual de las emisiones de CO₂ en Latinoamérica][def]
 - [Variación anual de las emisiones de CO₂ en países latinoamericanos](analisis_variacion_anual_co2_latinoamerica.ipynb)
 - [Gráfica comparativa de Latinoamérica](variacion_co2_latinoamerica.png)
 - [Gráfica de Colombia](variacion_co2_colombia.png)
-- [Resumen estadístico por país](resumen_variacion_co2_latinoamerica.csv)
-- [Datos utilizados: variación porcentual anual](change-co2-annual-pct.csv)
+  [Resumen estadístico por país](resumen_variacion_co2_latinoamerica.csv)
+  [Datos utilizados: variación porcentual anual](change-co2-annual-pct.csv)
 
 ## Licencia
 Los datos pertenecen a Our World in Data y sus fuentes originales.
