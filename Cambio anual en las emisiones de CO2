@@ -9,7 +9,6 @@
 # 0 %  → las emisiones permanecieron iguales.
 # -10 % → el país emitió un 10 % menos de CO₂ que el año anterior.
 
-
 # Línea de Tiempo de las Emisiones de CO₂
 
 # Línea de tiempo de los principales eventos relacionados con las emisiones de CO₂
@@ -25,65 +24,11 @@
 # | 2025 | Actualización de datos globales de emisiones de CO₂ |
 
 
-# Eventos históricos relacionados con las emisiones de CO₂
-años = [1750, 1850, 1950, 1988, 1997, 2015, 2020, 2025]
-eventos = [
-    "Revolución Industrial",
-    "Expansión Industrial",
-    "Gran Aceleración",
-    "Creación del IPCC",
-    "Protocolo de Kioto",
-    "Acuerdo de París",
-    "Pandemia COVID-19",
-    "Datos Our World in Data",
-]
 
-# Posición vertical alternada para las etiquetas
-niveles = [1, -1, 1, -1, 1, -1, 1, -1]
+# Colombia: variación anual de las emisiones de CO₂
+# La variación porcentual anual de las emisiones de dióxido de carbono (CO₂) mide cuánto
+# aumentaron o disminuyeron las emisiones respecto al año anterior. Según los datos de
+# **Our World in Data**, basados en el **Presupuesto Global de Carbono 2026**, en
+# **2025 Colombia registró una disminución del 9,62 %** en sus emisiones de CO₂ respecto
+# a 2024.
 
-# Crear figura
-class plt:
-    ...
-
-fig, ax = plt.subplots(figsize=(14, 6))
-
-# Línea principal
-ax.axhline(0, color="black", linewidth=2)
-
-# Dibujar los eventos
-for año, evento, nivel in zip(años, eventos, niveles):
-    ax.plot(año, 0, "o", color="darkred", markersize=10)
-    ax.vlines(año, 0, nivel, color="darkred", linestyle="--")
-    ax.text(
-        año,
-        nivel + (0.12 if nivel > 0 else -0.12),
-        f"{año}\n{evento}",
-        ha="center",
-        va="bottom" if nivel > 0 else "top",
-        fontsize=9,
-    )
-
-# Personalización
-ax.set_title(
-    "Línea de tiempo de las emisiones de CO₂ y los acuerdos climáticos",
-    fontsize=14,
-    fontweight="bold",
-)
-ax.set_xlabel("Año")
-ax.set_xticks(años)
-ax.set_xlim(1735, 2065)
-ax.set_ylim(-1.5, 1.5)
-ax.set_yticks([])
-ax.spines["left"].set_visible(False)
-ax.spines["right"].set_visible(False)
-ax.spines["top"].set_visible(False)
-
-ax.grid(axis="x", linestyle=":", alpha=0.5)
-class plt:
-    ...
-
-plt.tight_layout()
-
-# Guardar la imagen antes de mostrarla
-plt.savefig("linea_tiempo_co2.png", dpi=300, bbox_inches="tight")
-plt.show()
