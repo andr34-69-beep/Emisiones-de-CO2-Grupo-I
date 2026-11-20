@@ -1,27 +1,26 @@
+¿Qué mide el cambio anual en las emisiones de CO₂?
 
- # ¿Qué mide el cambio anual en las emisiones de CO₂?
-# Estudia los aumentos y las disminuciones de las emisiones de CO₂ a través de los años.
-# El cambio porcentual se calcula así:
-# ((emisiones del año actual - emisiones del año anterior) /
-#  emisiones del año anterior) × 100
-# Por ejemplo:
-# +10 % → el país emitió un 10 % más de CO₂ que el año anterior.
-# 0 %  → las emisiones permanecieron iguales.
-# -10 % → el país emitió un 10 % menos de CO₂ que el año anterior.
+Estudia los aumentos y las disminuciones de las emisiones de CO₂ a través de los años.
+El cambio porcentual se calcula así:
+(emisiones del año actual - emisiones del año anterior) / emisiones del año anterior) × 100
 
-# Línea de Tiempo de las Emisiones de CO₂
+si tiene 
++10 % → el país emitió un 10 % más de CO₂ que el año anterior.
+0 %  → las emisiones permanecieron iguales.
+-10 % → el país emitió un 10 % menos de CO₂ que el año anterior.
+
 
 # Línea de tiempo de los principales eventos relacionados con las emisiones de CO₂
-# | Año  | Evento |
-# |------|--------|
-# | 1750 | Inicio de la Revolución Industrial |
-# | 1850 | Expansión industrial y aumento de emisiones de CO₂ |
-# | 1950 | Gran aceleración económica mundial y crecimiento energético |
-# | 1988 | Creación del IPCC |
-# | 1997 | Firma del Protocolo de Kioto |
-# | 2015 | Adopción del Acuerdo de París |
-# | 2020 | Disminución temporal de emisiones por la pandemia |
-# | 2025 | Actualización de datos globales de emisiones de CO₂ |
+| Año  | Evento |
+|------|--------|
+| 1750 | Inicio de la Revolución Industrial |
+| 1850 | Expansión industrial y aumento de emisiones de CO₂ |
+| 1950 | Gran aceleración económica mundial y crecimiento energético |
+| 1988 | Creación del IPCC |
+| 1997 | Firma del Protocolo de Kioto |
+| 2015 | Adopción del Acuerdo de París |
+| 2020 | Disminución temporal de emisiones por la pandemia |
+| 2025 | Actualización de datos globales de emisiones de CO₂ |
 
 
 
