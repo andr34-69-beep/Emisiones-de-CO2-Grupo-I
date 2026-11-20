@@ -13,24 +13,73 @@ estudia los aumentos y las disminisiones de las emisiones de CO2 a traves de los
 # Línea de Tiempo de las Emisiones de CO₂
 
 | Año | Evento |
-|------|---------|
-| 1750 | Inicio de la Revolución Industrial. |
-| 1850 | Expansión industrial y aumento de emisiones de CO₂. |
-| 1950 | Gran aceleración económica mundial y crecimiento energético. |
-| 1988 | Creación del IPCC. |
-| 1997 | Firma del Protocolo de Kioto. |
-| 2015 | Adopción del Acuerdo de París. |
-| 2020 | Disminución temporal de emisiones por la pandemia. |
-| 2025 | Actualización de datos globales de emisiones de CO₂. |
+|------|---------
+| 1750 | Inicio de la Revolución Industrial. 
+| 1850 | Expansión industrial y aumento de emisiones de CO₂. 
+| 1950 | Gran aceleración económica mundial y crecimiento energético. 
+| 1988 | Creación del IPCC. 
+| 1997 | Firma del Protocolo de Kioto. 
+| 2015 | Adopción del Acuerdo de París. 
+| 2020 | Disminución temporal de emisiones por la pandemia. 
+| 2025 | Actualización de datos globales de emisiones de CO₂. 
 
-timeline
-    title Evolución de las Emisiones de CO₂
+import matplotlib.pyplot as plt
 
-    1750 : Revolución Industrial
-    1850 : Expansión industrial
-    1950 : Gran aceleración económica
-    1988 : Creación del IPCC
-    1997 : Protocolo de Kioto
-    2015 : Acuerdo de París
-    2020 : Pandemia COVID-19
-    2025 : Datos recientes de CO₂
+# Eventos históricos relacionados con las emisiones de CO₂
+
+años = [1750, 1850, 1950, 1988, 1997, 2015, 2020, 2025]
+
+eventos = [
+    "Revolución Industrial",
+    "Expansión Industrial",
+    "Gran Aceleración",
+    "Creación del IPCC",
+    "Protocolo de Kioto",
+    "Acuerdo de París",
+    "Pandemia COVID-19",
+    "Datos Our World in Data"
+]
+
+# Posición vertical alternada para las etiquetas
+niveles = [1, -1, 1, -1, 1, -1, 1, -1]
+
+# Crear figura
+fig, ax = plt.subplots(figsize=(14, 6))
+
+# Línea principal
+ax.axhline(0, color='black', linewidth=2)
+
+# Dibujar eventos
+for año, evento, nivel in zip(años, eventos, niveles):
+    ax.plot(año, 0, 'o', color='darkred', markersize=10)
+    ax.vlines(año, 0, nivel, color='darkred', linestyle='--')
+    ax.text(
+        año,
+        nivel + (0.1 if nivel > 0 else -0.1),
+        f"{año}\n{evento}",
+        ha='center',
+        va='bottom' if nivel > 0 else 'top',
+        fontsize=9
+    )
+
+# Personalización
+ax.set_title(
+    "Línea de Tiempo de las Emisiones de CO₂ y los Acuerdos Climáticos",
+    fontsize=14,
+    fontweight='bold'
+)
+
+ax.set_xlabel("Año")
+ax.set_yticks([])
+ax.spines['left'].set_visible(False)
+ax.spines['right'].set_visible(False)
+ax.spines['top'].set_visible(False)
+
+plt.grid(axis='x', linestyle=':', alpha=0.5)
+plt.tight_layout()
+
+# Guardar imagen
+plt.savefig("linea_tiempo_co2.png", dpi=300)
+
+# Mostrar gráfica
+plt.show()
