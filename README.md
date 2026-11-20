@@ -5,6 +5,9 @@ Fuente: Emisiones de CO₂
 ¿Cuánto CO₂ emite el mundo? ¿Qué países emiten más?
 https://ourworldindata.org/co2-emissions
 
+Autores: 
+Por Hannah Ritchie y Max Roser
+
 ## Integrantes
 - Integrante 1: 
 - Integrante 2: 
