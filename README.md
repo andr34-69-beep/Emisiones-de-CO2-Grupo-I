@@ -16,7 +16,7 @@ Por Hannah Ritchie y Max Roser
 
 ## Análisis creado por ANDREA RIAÑO
 
-- [Introduccion](1_introduccion)
+- [Introduccion](https://github.com/andr34-69-beep/Emisiones-de-CO2-Grupo-I/blob/d33a5c04dcf9e71a52210c20bbd06852386f820b/1_Introduccion)
 - [Notebook adjunto: variación anual de las emisiones de CO₂ en Latinoamérica][def]
 - [Variación anual de las emisiones de CO₂ en países latinoamericanos](analisis_variacion_anual_co2_latinoamerica.ipynb)
 - [Gráfica comparativa de Latinoamérica](variacion_co2_latinoamerica.png)
