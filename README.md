@@ -12,3 +12,5 @@ Por Hannah Ritchie y Max Roser
 - Integrante 1: 
 - Integrante 2: 
 - Integrante 3: Andrea Riaño 
+
+<img width="698" height="2268" alt="image" src="https://github.com/user-attachments/assets/c7ac122f-246c-4f01-932e-9fe63c7b08aa" />
