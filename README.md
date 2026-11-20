@@ -22,7 +22,7 @@ Por Hannah Ritchie y Max Roser
 - [Gráfica de línea de tiempo](linea_tiempo_emisiones_co2.png)
 - [Resumen comparativo de Latinoamérica](resumen_variacion_co2_latinoamerica.csv)
 - [Gráfica de Colombia](Gr%C3%A1fica%20de%20Colombia.png)
-- [Cambio anual en las emisiones de CO2]([resumen_variacion_co2_latinoamerica.csv](https://github.com/andr34-69-beep/Emisiones-de-CO2-Grupo-I/blob/main/Cambio%20anual%20en%20las%20emisiones%20de%20CO2)
+- [Cambio anual en las emisiones de CO2]([resumen_variacion_co2_latinoamerica.csv](https://github.com/andr34-69-beep/Emisiones-de-CO2-Grupo-I/blob/main/Cambio%20anual%20en%20las%20emisiones%20de%20CO2))
 
 ## Análisis creado por Laura Beltrán
 - [Emisiones_CO2_Grupo_I.ipynb](Emisiones_CO2_Grupo_I.ipynb)
