@@ -13,4 +13,10 @@ Por Hannah Ritchie y Max Roser
 - Integrante 2: 
 - Integrante 3: Andrea Riaño 
 
-<img width="698" height="2268" alt="image" src="https://github.com/user-attachments/assets/c7ac122f-246c-4f01-932e-9fe63c7b08aa" />
+## Objetivos
+- Analizar la evolución histórica de las emisiones.
+- Identificar años de crecimiento y reducción de emisiones.
+- Visualizar tendencias de largo plazo.
+
+## Licencia
+Los datos pertenecen a Our World in Data y sus fuentes originales.
