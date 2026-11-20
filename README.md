@@ -17,12 +17,12 @@ Por Hannah Ritchie y Max Roser
 ## Análisis creado por ANDREA RIAÑO
 
 - [Introducción](1_Introduccion)
-- [¿Qué mide el cambio anual en las emisiones de CO₂?](Cambio%20anual%20en%20las%20emisiones%20de%20CO2)
-- [Notebook adjunto: variación anual de las emisiones de CO₂ en Latinoamérica](variacion_anual_co2_latinoamerica.ipynb)
+- [Cambio anual en las emisiones de CO2?](Cambio%20anual%20en%20las%20emisiones%20de%20CO2)
+- [variacion_anual_co2_latinoamericana](variacion_anual_co2_latinoamerica.ipynb)
 - [Gráfica de línea de tiempo](linea_tiempo_emisiones_co2.png)
 - [Resumen comparativo de Latinoamérica](resumen_variacion_co2_latinoamerica.csv)
 - [Gráfica de Colombia](Gr%C3%A1fica%20de%20Colombia.png)
-- [Datos resumidos utilizados](resumen_variacion_co2_latinoamerica.csv)
+- [Cambio anual en las emisiones de CO2]([resumen_variacion_co2_latinoamerica.csv](https://github.com/andr34-69-beep/Emisiones-de-CO2-Grupo-I/blob/main/Cambio%20anual%20en%20las%20emisiones%20de%20CO2))
  
 ## Licencia
 Los datos pertenecen a Our World in Data y sus fuentes originales.
