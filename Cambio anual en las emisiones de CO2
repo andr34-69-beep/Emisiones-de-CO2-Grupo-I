@@ -1,34 +1,32 @@
-En esta seccion se va a analizar el crecimiento de las emisiones del CO2 con el pasar de los años y revisar en que años se observa especificamente 
-aumentos o reducciones importantes.
-Tambien vamos a abarcar sobre como se compoara colombia con el comportamiento mundial sobre las emisiones
-de CO2
 
+ # ¿Qué mide el cambio anual en las emisiones de CO₂?
+# Estudia los aumentos y las disminuciones de las emisiones de CO₂ a través de los años.
+# El cambio porcentual se calcula así:
+# ((emisiones del año actual - emisiones del año anterior) /
+#  emisiones del año anterior) × 100
+# Por ejemplo:
+# +10 % → el país emitió un 10 % más de CO₂ que el año anterior.
+# 0 %  → las emisiones permanecieron iguales.
+# -10 % → el país emitió un 10 % menos de CO₂ que el año anterior.
 
- ¿que mide el cambio anual en las emisiones de CO2?
-estudia los aumentos y las disminisiones de las emisiones de CO2 a traves de los años, basandose en una calificacion de:
-+10 % → el país emitió un 10 % más CO₂ que el año anterior.
-0 % → las emisiones permanecieron iguales.
-−10 % → el país emitió un 10 % menos CO₂ que el año anterior
 
 # Línea de Tiempo de las Emisiones de CO₂
 
-| Año | Evento |
-|------|---------
-| 1750 | Inicio de la Revolución Industrial. 
-| 1850 | Expansión industrial y aumento de emisiones de CO₂. 
-| 1950 | Gran aceleración económica mundial y crecimiento energético. 
-| 1988 | Creación del IPCC. 
-| 1997 | Firma del Protocolo de Kioto. 
-| 2015 | Adopción del Acuerdo de París. 
-| 2020 | Disminución temporal de emisiones por la pandemia. 
-| 2025 | Actualización de datos globales de emisiones de CO₂. 
+# Línea de tiempo de los principales eventos relacionados con las emisiones de CO₂
+# | Año  | Evento |
+# |------|--------|
+# | 1750 | Inicio de la Revolución Industrial |
+# | 1850 | Expansión industrial y aumento de emisiones de CO₂ |
+# | 1950 | Gran aceleración económica mundial y crecimiento energético |
+# | 1988 | Creación del IPCC |
+# | 1997 | Firma del Protocolo de Kioto |
+# | 2015 | Adopción del Acuerdo de París |
+# | 2020 | Disminución temporal de emisiones por la pandemia |
+# | 2025 | Actualización de datos globales de emisiones de CO₂ |
 
-import matplotlib.pyplot as plt
 
 # Eventos históricos relacionados con las emisiones de CO₂
-
 años = [1750, 1850, 1950, 1988, 1997, 2015, 2020, 2025]
-
 eventos = [
     "Revolución Industrial",
     "Expansión Industrial",
@@ -37,49 +35,55 @@ eventos = [
     "Protocolo de Kioto",
     "Acuerdo de París",
     "Pandemia COVID-19",
-    "Datos Our World in Data"
+    "Datos Our World in Data",
 ]
 
 # Posición vertical alternada para las etiquetas
 niveles = [1, -1, 1, -1, 1, -1, 1, -1]
 
 # Crear figura
+class plt:
+    ...
+
 fig, ax = plt.subplots(figsize=(14, 6))
 
 # Línea principal
-ax.axhline(0, color='black', linewidth=2)
+ax.axhline(0, color="black", linewidth=2)
 
-# Dibujar eventos
+# Dibujar los eventos
 for año, evento, nivel in zip(años, eventos, niveles):
-    ax.plot(año, 0, 'o', color='darkred', markersize=10)
-    ax.vlines(año, 0, nivel, color='darkred', linestyle='--')
+    ax.plot(año, 0, "o", color="darkred", markersize=10)
+    ax.vlines(año, 0, nivel, color="darkred", linestyle="--")
     ax.text(
         año,
-        nivel + (0.1 if nivel > 0 else -0.1),
+        nivel + (0.12 if nivel > 0 else -0.12),
         f"{año}\n{evento}",
-        ha='center',
-        va='bottom' if nivel > 0 else 'top',
-        fontsize=9
+        ha="center",
+        va="bottom" if nivel > 0 else "top",
+        fontsize=9,
     )
 
 # Personalización
 ax.set_title(
-    "Línea de Tiempo de las Emisiones de CO₂ y los Acuerdos Climáticos",
+    "Línea de tiempo de las emisiones de CO₂ y los acuerdos climáticos",
     fontsize=14,
-    fontweight='bold'
+    fontweight="bold",
 )
-
 ax.set_xlabel("Año")
+ax.set_xticks(años)
+ax.set_xlim(1735, 2065)
+ax.set_ylim(-1.5, 1.5)
 ax.set_yticks([])
-ax.spines['left'].set_visible(False)
-ax.spines['right'].set_visible(False)
-ax.spines['top'].set_visible(False)
+ax.spines["left"].set_visible(False)
+ax.spines["right"].set_visible(False)
+ax.spines["top"].set_visible(False)
 
-plt.grid(axis='x', linestyle=':', alpha=0.5)
+ax.grid(axis="x", linestyle=":", alpha=0.5)
+class plt:
+    ...
+
 plt.tight_layout()
 
-# Guardar imagen
-plt.savefig("linea_tiempo_co2.png", dpi=300)
-
-# Mostrar gráfica
+# Guardar la imagen antes de mostrarla
+plt.savefig("linea_tiempo_co2.png", dpi=300, bbox_inches="tight")
 plt.show()
