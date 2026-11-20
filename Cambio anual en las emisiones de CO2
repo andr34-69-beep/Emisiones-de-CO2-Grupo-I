@@ -1,1 +1,20 @@
-En esta seccion se va a analizar el crecimiento de las emisiones del CO2 con el pasar de los años y revisar en que años se observa especificamente aumentos o reducciones importantes
+En esta seccion se va a analizar el crecimiento de las emisiones del CO2 con el pasar de los años y revisar en que años se observa especificamente 
+aumentos o reducciones importantes.
+Tambien vamos a abarcar sobre como se compoara colombia con el comportamiento mundial sobre las emisiones
+de CO2
+
+import warnings
+warnings.filterwarnings("ignore")
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+
+sns.set_theme(style="whitegrid")
+plt.rcParams["figure.figsize"] = (12, 5)
+pd.set_option("display.max_columns", 50)
+pd.set_option("display.float_format", lambda x: f"{x:,.3f}")
