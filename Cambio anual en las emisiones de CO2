@@ -10,3 +10,27 @@ estudia los aumentos y las disminisiones de las emisiones de CO2 a traves de los
 0 % → las emisiones permanecieron iguales.
 −10 % → el país emitió un 10 % menos CO₂ que el año anterior
 
+# Línea de Tiempo de las Emisiones de CO₂
+
+| Año | Evento |
+|------|---------|
+| 1750 | Inicio de la Revolución Industrial. |
+| 1850 | Expansión industrial y aumento de emisiones de CO₂. |
+| 1950 | Gran aceleración económica mundial y crecimiento energético. |
+| 1988 | Creación del IPCC. |
+| 1997 | Firma del Protocolo de Kioto. |
+| 2015 | Adopción del Acuerdo de París. |
+| 2020 | Disminución temporal de emisiones por la pandemia. |
+| 2025 | Actualización de datos globales de emisiones de CO₂. |
+
+timeline
+    title Evolución de las Emisiones de CO₂
+
+    1750 : Revolución Industrial
+    1850 : Expansión industrial
+    1950 : Gran aceleración económica
+    1988 : Creación del IPCC
+    1997 : Protocolo de Kioto
+    2015 : Acuerdo de París
+    2020 : Pandemia COVID-19
+    2025 : Datos recientes de CO₂
