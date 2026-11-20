@@ -9,6 +9,10 @@
 # 0 %  → las emisiones permanecieron iguales.
 # -10 % → el país emitió un 10 % menos de CO₂ que el año anterior.
 
+# Objetivo
+# Analizar la evolución histórica de las emisiones de CO₂, identificar los principales
+# años de aumento y reducción y visualizar sus tendencias a largo plazo.
+
 # Línea de Tiempo de las Emisiones de CO₂
 
 # Línea de tiempo de los principales eventos relacionados con las emisiones de CO₂
@@ -31,4 +35,73 @@
 # **Our World in Data**, basados en el **Presupuesto Global de Carbono 2026**, en
 # **2025 Colombia registró una disminución del 9,62 %** en sus emisiones de CO₂ respecto
 # a 2024.
+
+# Comparación de la variación porcentual anual en Colombia
+# | Año | Variación respecto al año anterior |
+# |-----|------------------------------------|
+# | 2023 | +3,75 % |
+# | 2024 | +0,89 % |
+# | 2025 | -9,62 % |
+
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+
+anios = [1750, 1850, 1950, 1988, 1997, 2015, 2020, 2025]
+eventos = [
+    "Revolución Industrial",
+    "Expansión industrial",
+    "Gran aceleración económica",
+    "Creación del IPCC",
+    "Protocolo de Kioto",
+    "Acuerdo de París",
+    "Disminución por la pandemia",
+    "Datos globales actualizados",
+]
+niveles = [1, -1, 1, -1, 1, -1, 1, -1]
+
+fig, ax = plt.subplots(figsize=(18, 8))
+ax.hlines(0, 1740, 2028, color="black", linewidth=2)
+
+for anio, evento, nivel in zip(anios, eventos, niveles):
+    ax.plot(anio, 0, "o", color="#1b7f79", markersize=9)
+    ax.vlines(anio, 0, nivel, color="#1b7f79", linestyle="--", alpha=0.8)
+    ax.text(
+        anio,
+        nivel + (0.12 if nivel > 0 else -0.12),
+        f"{anio}\n{evento}",
+        ha="center",
+        va="bottom" if nivel > 0 else "top",
+        fontsize=8,
+        bbox=dict(boxstyle="round,pad=0.25", facecolor="white", edgecolor="#cccccc"),
+    )
+
+ax.set_title(
+    "Línea de tiempo de las emisiones de CO₂",
+    fontsize=16,
+    fontweight="bold",
+)
+ax.set_xlabel("Año")
+ax.set_xlim(1735, 2035)
+ax.set_ylim(-1.7, 1.7)
+ax.set_xticks(anios)
+ax.tick_params(axis="x", labelsize=9)
+ax.set_yticks([])
+
+ax.text(
+    0.5,
+    1.12,
+    "Objetivo: analizar la evolución histórica, identificar aumentos y reducciones "
+    "y visualizar tendencias a largo plazo",
+    transform=ax.transAxes,
+    ha="center",
+    fontsize=10,
+)
+
+for lado in ("left", "right", "top", "bottom"):
+    ax.spines[lado].set_visible(False)
+
+ax.grid(axis="x", linestyle=":", alpha=0.45)
+plt.tight_layout()
+plt.savefig("linea_tiempo_emisiones_co2.png", dpi=300, bbox_inches="tight")
 
