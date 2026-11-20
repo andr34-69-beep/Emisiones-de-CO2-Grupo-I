@@ -14,8 +14,9 @@ Por Hannah Ritchie y Max Roser
 - Identificar años de crecimiento y reducción de emisiones.
 - Visualizar tendencias de largo plazo.
 
-## Análisis creado
+## Análisis creado por ANDREA RIAÑO
 
+- [Introduccion](1_introduccion)
 - [Notebook adjunto: variación anual de las emisiones de CO₂ en Latinoamérica][def]
 - [Variación anual de las emisiones de CO₂ en países latinoamericanos](analisis_variacion_anual_co2_latinoamerica.ipynb)
 - [Gráfica comparativa de Latinoamérica](variacion_co2_latinoamerica.png)
