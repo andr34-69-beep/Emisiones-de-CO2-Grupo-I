@@ -10,36 +10,3 @@ estudia los aumentos y las disminisiones de las emisiones de CO2 a traves de los
 0 % → las emisiones permanecieron iguales.
 −10 % → el país emitió un 10 % menos CO₂ que el año anterior
 
-import pandas as pd
-import matplotlib.pyplot as plt
-
-# Cargar datos directamente desde Our World in Data
-url = "https://ourworldindata.org/grapher/change-co2-annual-pct.csv?v=1&csvType=full&useColumnShortNames=false"
-
-df = pd.read_csv(url)
-
-# Mostrar las primeras filas
-print(df.head())
-
-# Ver nombres de columnas
-print(df.columns)
-
-# Filtrar Colombia
-colombia = df[df["Entity"] == "Colombia"]
-
-# Mostrar los últimos registros
-print(colombia.tail())
-
-# Graficar evolución
-plt.figure(figsize=(12,6))
-plt.plot(
-    colombia["Year"],
-    colombia["Annual percentage change in CO₂ emissions"],
-    color="green"
-)
-
-plt.title("Cambio porcentual anual de emisiones de CO₂ - Colombia")
-plt.xlabel("Año")
-plt.ylabel("Variación (%)")
-plt.grid(True)
-plt.show()
